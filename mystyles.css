@@ -3,6 +3,6 @@ div.js-repos-container.user-repos {
     display: none !important;
 }
 
-header.Header[role="banner"]{
-    background-image: linear-gradient(to right , #051937, #004d7a, #008793, #00bf72) !important;
+header.Header[role="banner"] {
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72) !important;
 }

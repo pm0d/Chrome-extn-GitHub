@@ -1,16 +1,28 @@
 {
-    "manifest_version": 2,
-    "name": "GitHub",
-    "version": "1.0",
-    "description": "An extension for injecting custom CSS/JS to the GitHub website",
-    "author": "Pramod Ghuge",
-    "page_action": {
-          "default_icon": "icon.png",
-          "default_title": "GitHub" 
-        },
-    "content_scripts": [{
-        "matches": ["https://github.com/*"],
-        "css": ["myStyles.css"],
-        "js": ["contentScript.js"]
-    }]
+  "author": "Pramod Ghuge",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "css": ["mystyles.css"],
+      "js": ["mycontentscript.js"]
+    }
+  ],
+  "description": "An extension for adding custom CSS/JS to the GitHub website",
+  "icons": {
+    "16": "github_16.png",
+    "32": "github_32.png",
+    "48": "github_48.png"
+  },
+  "manifest_version": 2,
+  "name": "GitHub custom styles",
+  "page_action": {
+    "default_icon": { 
+      "16": "github_16.png",
+      "32": "github_32.png",
+      "48": "github_48.png"    
+    },
+    "default_title": "GitHub"
+  },
+  "permissions": ["tabs"],
+  "version": "1.1"
 }
