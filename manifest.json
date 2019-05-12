@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "GitHub",
+    "version": "1",
+    "description": "An extension for injecting CSS/JS to the GitHub website",
+    "icons": {
+        "16": "icon.png"
+    },
+    "author": "Pramod Ghuge",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://github.com/"],
+        "css": ["myStyles.css"],
+        "js": ["contentScript.js"]
+    }]
+}
